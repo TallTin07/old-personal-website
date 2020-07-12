@@ -86,9 +86,23 @@ section{
     margin:auto;
     border-radius:10px;
 }
-.single-image:hover{
-    -ms-transform: scale(1.5); 
-    -webkit-transform: scale(1.5); 
-    transform: scale(1.5);
+.click-button:hover{
+    background: none;
+    color: black;
+    border: 2px solid red;
+    }
+    .single-image{
+        transition: .3s
+    }
     
-}
+    .single-image:hover:nth-child(3){
+        transform: scale(1.5) translateX(-170px);
+    }
+    
+    .single-image:hover:nth-child(1){
+        transform: scale(1.5) translateX(170px);
+    }
+    
+    .single-image:hover:nth-child(2){
+        transform: scale(1.5);
+    }
